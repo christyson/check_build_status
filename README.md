@@ -1,17 +1,16 @@
-# Veracode Python API Credentials Expirt using HMAC Example
+# Veracode Check Build Status
 
-A simple example to get the exiration dates of api credentials for your users based off the HMAC example provided here:
-https://github.com/veracode/veracode-python-hmac-example
+A simple example example script to check if a Veracode app profile is currently running a scan.
 
 ## Setup
 
 Clone this repository:
 
-    git clone https://github.com/christyson/veracode-python-api_credentials_expiry-example
+    git clone https://github.com/christyson/check_build_status
 
 Install dependencies:
 
-    cd veracode-python-api_credentials_expiry-example
+    cd check_build_status
     pip install -r requirements.txt
 
 (Optional) Save Veracode API credentials in `~/.veracode/credentials`
@@ -24,7 +23,7 @@ Install dependencies:
 
 If you have saved credentials as above you can run:
 
-    python userapiexpiry.py
+    python check_build_status.py
     
 Otherwise you will need to set environment variables before running `example.py`:
 
