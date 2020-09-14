@@ -1,6 +1,6 @@
 # Veracode Check Build Status
 
-A simple example example script to check if a Veracode app profile is currently running a scan.
+A simple example script to check if a Veracode app profile is currently running a scan.
 
 ## Setup
 
