@@ -21,18 +21,22 @@ Install dependencies:
 
 ## usage
 
-usage: check_build_status.py [-h] -a APP
+usage: check_build_status.py [-h] -a APP [-s SANDBOX]
 
-Note: if there are builds running it exit with a 1 otherwise a 0
+Note: at a minimum APP is required and if there are builds running it exit with a 1 otherwise a 0  
 
 ## Run
 
 If you have saved credentials as above you can run:
 
     python check_build_status.py -a <your app name>
+    or
+    python check_build_status.py -a <your app name> -s <your sandbox name>
     
 Otherwise you will need to set environment variables before running `example.py`:
 
     export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
     export VERACODE_API_KEY_SECRET=<YOUR_API_KEY_SECRET>
     python check_build_status.py -a <your app name>
+    or
+    python check_build_status.py -a <your app name> -s <your sandbox name>
