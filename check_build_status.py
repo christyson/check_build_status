@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(
         description='This script checks to see if an app is currently building a policy scan and returns 0 if not and 1 otherwise. Note: Sandbox is optional')
     parser.add_argument('-a', '--app', help='App name to check',required=True)
-    parser.add_argument('-s', '--sandbox', default="", help='App name to check',required=False)
+    parser.add_argument('-s', '--sandbox', default="", help='Sandbox name to check',required=False)
     args = parser.parse_args()
 
     data = VeracodeAPI().get_app_list()
