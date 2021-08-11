@@ -1,6 +1,7 @@
 # Veracode Check Build Status
 
 A simple example script to check if a Veracode app profile (or sandbox) is currently running a scan.
+If a build is running you can delete it if you have the appropriate permissions using the --delete option.
 
 ## Setup
 
@@ -21,7 +22,7 @@ Install dependencies:
 
 ## usage
 
-usage: check_build_status.py [-h] -a APP [-s SANDBOX]
+usage: check_build_status.py [-h] -a APP [-s SANDBOX] [--delete]
 
 Note: at a minimum APP is required and if there are builds running it exit with a 1 otherwise a 0  
 
@@ -32,7 +33,14 @@ If you have saved credentials as above you can run:
     python check_build_status.py -a <your app name>
     or
     python check_build_status.py -a <your app name> -s <your sandbox name>
-    
+
+To delete use the following commands:
+
+    python check_build_status.py -a <your app name> --delete
+    or
+    python check_build_status.py -a <your app name> -s <your sandbox name> --delete
+
+
 Otherwise you will need to set environment variables before running `example.py`:
 
     export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
